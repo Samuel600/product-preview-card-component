@@ -90,6 +90,12 @@ i{
     margin: .6em;
 }
 
+.attribution{
+    font-size: 1.2rem;
+    color:  hsl(228, 45%, 44%);
+    margin-left: .7em;
+}
+
 @media (max-width:768px) {
 
     .container{
