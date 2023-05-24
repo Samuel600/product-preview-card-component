@@ -1,0 +1,116 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    margin: .2em;
+    width: 500px;
+    justify-content: center;
+}
+
+.right{
+    padding: 1em;
+    width: 83%;
+    background-color:  hsl(0, 0%, 100%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.money{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+
+h1,h4,p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+}
+
+
+h2,h3{
+    font-family: 'Fraunces', serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+h3{
+   color: hsl(158, 36%, 37%);
+}
+
+h1{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .1em;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .1em;
+    
+}
+
+.left img{
+    width: 105%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.number-with-line{
+    position: relative;
+}
+
+.number-with-line::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    border: none;
+    padding: .6em .9em .5em;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+i{
+    margin: .6em;
+}
+
+@media (max-width:768px) {
+
+    .container{
+        flex-direction: column;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0;
+        margin-left: 2em;
+    }
+
+    .left img{
+        width: 90%;
+        padding: 0;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .right{
+        padding: .9em;
+        border-radius: 0;
+    }
+
+}
